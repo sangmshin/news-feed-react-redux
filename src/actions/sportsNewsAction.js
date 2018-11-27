@@ -4,7 +4,7 @@ import { GET_SPORTS_NEWS_SUCCESS } from "./actionTypes";
 import { GET_SPORTS_NEWS_ERROR } from "./actionTypes";
 
 const API_KEY = '2e3cf3b657fc4636a94adbf21359d3d1'
-const sportsNews_API = `https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=${API_KEY}`
+const sportsNews_API = `https://newsapi.org/v2/top-headlines?sources=espn&apiKey=${API_KEY}`
 
 export function getSportsNews() {
   return dispatch => {
