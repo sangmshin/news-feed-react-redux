@@ -1,0 +1,121 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+
+
+body {
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+
+  font-family: 'Times New Roman', Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: black;
+
+  &:hover {
+    color: #0080c3;
+    text-decoration: none;
+  }
+}
+
+.thumbnail {
+  border-radius: 0px;
+}
+
+a.thumbnail:hover {
+  border-color: #0080c3;
+}
+
+
+.container-fluid {
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 1px #ccc solid;
+
+  .category-title {
+    font-weight: 600;
+  }
+
+  .topic {
+    border-right: 1px #ccc solid;
+  }
+
+  .read-article a {
+    font-weight: 600;
+    color: #0080c3;
+  }
+
+  .title-large {
+    letter-spacing: -1px;
+    // font-size: 10px;
+    line-height: 34px;
+  }
+
+  .title-small {
+    letter-spacing: -1px;
+    font-size: 19px;
+    line-height: 22px;
+  }
+
+  .header-img {
+    padding-bottom: 10px;
+  }
+
+  .lazyLoad-text {
+    color: red;
+  }
+
+  .overrider {
+    display: block;
+    margin: 0 auto;
+    border-color: red;
+  }
+
+  .pubdate {
+    font-size: 11px;
+  }
+
+}
+
+.nav-tabs {
+  border-bottom: 0px solid #ddd !important;
+}
+
+.nav-tabs>li>a {
+  border-radius: 0 0 0 0 !important;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+  border-bottom-color: #ddd;
+}
+
+// WORLD
+
+// US
+
+// SPORTS
+@media(max-width:1199px) {
+  .title-small {
+    font-size: 30px !important;
+    letter-spacing: -1px !important;
+    line-height: 34px !important;
+  }
+}
+
+@media(max-width:767px) {
+  .nav.nav-tabs.navbar-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center;
+
+    li {
+      width: 100%;
+    }
+  }
+}
+
+// TECH
