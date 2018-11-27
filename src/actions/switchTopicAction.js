@@ -3,9 +3,9 @@ import {
 } from './actionTypes';
 
 export default function switchTopicAction(column) {
-  if (column === 1) {
 
-    return {
+  return column === 1
+  ? {
       type: SWITCH_TOPIC,
       payload: {
         display: {
@@ -16,10 +16,8 @@ export default function switchTopicAction(column) {
         }
       }
     }
-
-  } else if (column === 12) {
-
-    return {
+  : column === 12
+  ? {
       type: SWITCH_TOPIC,
       payload: {
         display: {
@@ -30,9 +28,8 @@ export default function switchTopicAction(column) {
         }
       }
     }
-  } else if (column === 2) {
-
-    return {
+  : column === 2
+  ? {
       type: SWITCH_TOPIC,
       payload: {
         display: {
@@ -43,9 +40,8 @@ export default function switchTopicAction(column) {
         }
       }
     }
-  } else if (column === 3) {
-
-    return {
+  : column === 3
+  ? {
       type: SWITCH_TOPIC,
       payload: {
         display: {
@@ -56,9 +52,8 @@ export default function switchTopicAction(column) {
         }
       }
     }
-  } else if (column === 34) {
-
-    return {
+  : column === 34
+  ? {
       type: SWITCH_TOPIC,
       payload: {
         display: {
@@ -69,9 +64,8 @@ export default function switchTopicAction(column) {
         }
       }
     }
-  } else if (column === 4) {
-
-    return {
+  : column === 4
+  && {
       type: SWITCH_TOPIC,
       payload: {
         display: {
@@ -82,5 +76,5 @@ export default function switchTopicAction(column) {
         }
       }
     }
-  }
+
 }
