@@ -16,7 +16,7 @@ class Tech extends Component{
     }
   }
 
-  onResize=()=> this.setState({ isResizing: true })
+  onResize =()=> this.setState({ isResizing: true })
 
   shouldComponentUpdate(nextProps, nextState){
     return this.state.isResizing
@@ -30,7 +30,7 @@ class Tech extends Component{
   }
 
   render(){
-    console.log('inside TECH.js: ',this.props);
+    // console.log('inside TECH.js: ',this.props);
     const { news, isLoading } = this.props.techNews;
 
      if(!isLoading){

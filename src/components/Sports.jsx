@@ -29,7 +29,7 @@ class Sports extends Component{
   }
 
   render(){
-    console.log('inside SPORTS.js: ',this.props);
+    // console.log('inside SPORTS.js: ',this.props);
     const { news, isLoading } = this.props.sportsNews;
 
      if(!isLoading){

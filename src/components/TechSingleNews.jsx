@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { memo } from 'react';
 import '../style.scss'
 import ReactHtmlParser from 'react-html-parser';
 import {  Thumbnail } from 'react-bootstrap'
 import pubdateService from "./pubdateService";
 
-const TechSingleNews = (props) =>{
+const TechSingleNews = memo( props => {
   const { news } = props
   
   var pubdate = new pubdateService()
@@ -33,7 +33,7 @@ const TechSingleNews = (props) =>{
       <hr/>
     </>
   )
-}
+})
 
 
 

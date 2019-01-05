@@ -14,7 +14,7 @@ export function getSportsNews() {
     return axios
       .get(sportsNews_API)
       .then(res => {
-        console.log("SUCCESS! Here is the data>>", res.data);
+        // console.log("SUCCESS! Here is the data>>", res.data);
         dispatch(getSportsNewsSuccess(res.data.articles));
         return res.data.articles;
       })

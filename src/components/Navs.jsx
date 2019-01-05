@@ -16,7 +16,7 @@ class Navs extends React.Component {
   }
   handleSelect(eventKey, e) {
     e.preventDefault();
-    console.log(`selected ${eventKey}`);
+    // console.log(`selected ${eventKey}`);
     this.setState({activeKey: eventKey})
 
     eventKey === '1' && window.innerWidth >= 992

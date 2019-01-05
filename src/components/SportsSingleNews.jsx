@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { memo } from 'react';
 import '../style.scss'
 import ReactHtmlParser from 'react-html-parser';
 import {  Thumbnail } from 'react-bootstrap'
 import pubdateService from "./pubdateService";
 
 
-const SportsSingleNews = (props) =>{
+const SportsSingleNews = memo((props) => {
+
+  console.log('rendering');
+  
   const { news } = props
 
   var pubdate = new pubdateService()
@@ -34,7 +37,7 @@ const SportsSingleNews = (props) =>{
       <hr/>
     </>
   )
-}
+})
 
 
 export default SportsSingleNews;

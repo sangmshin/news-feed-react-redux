@@ -15,7 +15,7 @@ export function getUsNews() {
     return axios
       .get(usNews_API)
       .then(res => {
-        console.log("SUCCESS! Here is the data>>", res.data);
+        // console.log("SUCCESS! Here is the data>>", res.data);
         dispatch(getUsNewsSuccess(res.data.articles));
         return res.data.articles;
       })

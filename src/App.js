@@ -100,11 +100,12 @@ class App extends Component {
       </Store>
     );
   }
+
+  static propTypes = {
+    display: PropTypes.object,
+  };
 }
 
-Navs.propTypes = {
-  display: PropTypes.object,
-};
 
 const mapStateToProps = state => ({display:state.display})
 

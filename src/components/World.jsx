@@ -29,7 +29,7 @@ class World extends Component{
   }
 
   render(){
-    console.log('inside WORLD.JS: ', this.props.worldNews);
+    // console.log('inside WORLD.JS: ', this.props.worldNews);
     const { news, isLoading } = this.props.worldNews;
 
      if(!isLoading){
@@ -47,13 +47,14 @@ class World extends Component{
 
     return <p>loading news</p>
   }
+  
+  static propTypes = {
+    _getWorldNews: PropTypes.func.isRequired,
+    worldNews: PropTypes.object
+  };
 }
 
 
-World.propTypes = {
-  _getWorldNews: PropTypes.func.isRequired,
-  worldNews: PropTypes.object
-};
 
 World.defaultProps = {
   _getWorldNews: e => {},

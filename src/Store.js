@@ -23,40 +23,35 @@ class Store extends Component{
   }
 
   componentDidMount(){
-    axios.get(world_API)
-    .then(res =>{
-      console.log(res.data);
-      // this.setState({world_news: res.data.articles})
-    })
+    // axios.get(world_API)
+    // .then(res =>{
+    //   // console.log(res.data);
+    //   // this.setState({world_news: res.data.articles})
+    // })
 
-    axios.get(us_API)
-    .then(res =>{
-      console.log(res.data);
-      // this.setState({us_news: res.data.articles})
-    })
+    // axios.get(us_API)
+    // .then(res =>{
+    //   // console.log(res.data);
+    //   // this.setState({us_news: res.data.articles})
+    // })
 
-    axios.get(sports_API)
-    .then(res =>{
-      console.log(res.data);
-      // this.setState({sports_news: res.data.articles})
-    })
+    // axios.get(sports_API)
+    // .then(res =>{
+    //   // console.log(res.data);
+    //   // this.setState({sports_news: res.data.articles})
+    // })
 
-    axios.get(tech_API)
-    .then(res =>{
-      console.log(res.data);
-      // this.setState({tech_news: res.data.articles})
-    })
+    // axios.get(tech_API)
+    // .then(res =>{
+    //   // console.log(res.data);
+    //   // this.setState({tech_news: res.data.articles})
+    // })
   }
 
-
-
-  render(){
-    return (
-      <Provider value={{...this.state}}>
-        {this.props.children}
-      </Provider>
-    )
-  }
+  render =()=> 
+    <Provider value={{...this.state}}>
+      {this.props.children}
+    </Provider>
 }
 
 // export default Store;

@@ -5,6 +5,7 @@ import { GET_WORLD_NEWS_ERROR } from "./actionTypes";
 const API_KEY = '2e3cf3b657fc4636a94adbf21359d3d1'
 
 const worldNews_API = `https://newsapi.org/v2/top-headlines?language=en&apiKey=${API_KEY}`
+
 export function getWorldNews() {
   return dispatch => {
 
@@ -13,7 +14,7 @@ export function getWorldNews() {
     return axios
       .get(worldNews_API)
       .then(res => {
-        console.log("SUCCESS! Here is the data>>", res.data);
+        // console.log("SUCCESS! Here is the data>>", res.data);
         dispatch(getWorldNewsSuccess(res.data.articles));
         return res.data.articles;
       })

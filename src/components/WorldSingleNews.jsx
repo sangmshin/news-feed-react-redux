@@ -16,6 +16,7 @@ class WorldSingleNews extends Component{
 
   render(){
     const { news } = this.props
+    
     return (
         <>
           {

@@ -29,7 +29,7 @@ class Us extends Component{
   }
 
   render(){
-    console.log('inside US.js: ',this.props);
+    // console.log('inside US.js: ',this.props);
     const { news, isLoading } = this.props.usNews;
 
      if(!isLoading){

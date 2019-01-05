@@ -14,7 +14,7 @@ export function getTechNews() {
     return axios
       .get(techNews_API)
       .then(res => {
-        console.log("SUCCESS! Here is the data>>", res.data);
+        // console.log("SUCCESS! Here is the data>>", res.data);
         dispatch(getTechNewsSuccess(res.data.articles));
         return res.data.articles;
       })

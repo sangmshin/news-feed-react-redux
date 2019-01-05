@@ -1,16 +1,16 @@
-import topicReducer from "./topicReducer";
-import worldNewsReducer from "./worldNewsReducer";
-import usNewsReducer from "./usNewsReducer";
-import sportsNewsReducer from "./sportsNewsReducer";
-import techNewsReducer from "./techNewsReducer";
+import display from "./topicReducer";
+import worldNews from "./worldNewsReducer";
+import usNews from "./usNewsReducer";
+import sportsNews from "./sportsNewsReducer";
+import techNews from "./techNewsReducer";
 import { combineReducers } from "redux";
 
 const rootReducer = combineReducers({
-  display: topicReducer,
-  worldNews: worldNewsReducer,
-  usNews: usNewsReducer,
-  sportsNews: sportsNewsReducer,
-  techNews: techNewsReducer,
+  display,
+  worldNews,
+  usNews,
+  sportsNews,
+  techNews,
 });
 
 export default rootReducer;
